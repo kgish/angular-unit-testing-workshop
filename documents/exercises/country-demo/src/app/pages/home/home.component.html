@@ -1,0 +1,19 @@
+<mat-spinner *ngIf="loading" [diameter]="50"></mat-spinner>
+<div *ngIf="!loading">
+  <mat-toolbar class="toolbar">
+    <mat-chip-list class="chip-list">
+      <mat-chip [class.selected]="'' === letter" (click)="filterCountries('')">+</mat-chip>
+      <mat-chip *ngFor="let ch of letters" mat-button [class.selected]="ch === letter"
+              (click)="filterCountries(ch)">{{ch}}</mat-chip>
+    </mat-chip-list>
+    <button mat-button [class.selected]="population" (click)="togglePopulation()">
+      Population
+      <mat-icon *ngIf="population === 1">keyboard_arrow_down</mat-icon>
+      <mat-icon *ngIf="population === 2">keyboard_arrow_up</mat-icon>
+    </button>
+  </mat-toolbar>
+  <p> Found {{filteredCountries.length}} countries{{letter !== '' ? ' starting with the letter ' + letter : ''}}.</p>
+  <div fxLayout="row wrap">
+    <app-country *ngFor="let country of filteredCountries" [country]="country"></app-country>
+  </div>
+</div>

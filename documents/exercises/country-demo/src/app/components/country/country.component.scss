@@ -1,0 +1,22 @@
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.mat-card-header {
+  border-bottom: 1px solid lightgrey;
+}
+
+.mat-card-content {
+  padding-top: 10px;
+  display: flex;
+  flex: 1;
+}
+
+.flag {
+  width: 50px;
+  border: 1px solid black;
+}

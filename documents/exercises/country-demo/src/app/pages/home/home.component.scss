@@ -1,0 +1,16 @@
+.toolbar {
+  height: 50px;
+}
+
+.selected {
+  border: 1px solid black;
+}
+
+.chip-list {
+  margin-right: 10px;
+  font-size: smaller;
+}
+
+.mat-chip:hover {
+  cursor: pointer;
+}
