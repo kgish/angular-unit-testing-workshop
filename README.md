@@ -1,6 +1,6 @@
 # Angular Unit Testing Workshop
 
-This is the COIN workshop about Angular Unit Testing adapted from the online [Unit Testing Angular Course](https://app.pluralsight.com/library/courses/unit-testing-angular) created by Joe Eames.
+This is the company workshop I created about Angular Unit Testing adapted from the online [Unit Testing Angular Course](https://app.pluralsight.com/library/courses/unit-testing-angular) created by Joe Eames.
 
 Angular provides out of the box set of tools to help us unit test our code, but all those tools and techniques need to 
 be learned. 
